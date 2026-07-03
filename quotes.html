@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quotes</title>
+</head>
+<body>
+
+<h1>Welcome to Quotes</h1>
+
+<button onclick="showQuote()">Get Quote</button>
+
+<p id="quote">Click the button to see a quote.</p>
+
+
+
+<script>
+    let quotes = [
+        "The only way to do great work is to love what you do. - Steve Jobs",
+        "In the middle of every difficulty lies opportunity. - Albert Einstein",
+        "The best way to predict the future is to invent it. - Alan Kay",
+        "Do not wait to strike till the iron is hot; but make it hot by striking. - William Butler Yeats",
+        "The journey of a thousand miles begins with one step. - Lao Tzu"
+    ];
+    function showQuote() {
+        let random = Math.floor(Math.random() * quotes.length);
+        document.getElementById("quote").innerHTML = quotes[random];
+    }
+
+</script>
+
+</body>
+</html>
